@@ -8,11 +8,11 @@ Dentro da pasta do projeto instale os modulos:
 Depois rode o codigo:
 `npm start`
 
-Seu servidor estara rodando na porta 3000.
+Seu servidor estará rodando na porta 3000.
 Acontece que para o dialogflow acessar o webhook é necessário ser em uma URL exposta e com https. Para isso é necessário algum serviço de tunnel como:
 
-http://serveo.net/ (precisa de ssh, consegue usar no powershell)
-https://localtunnel.github.io/www/ (modulo node, bem facil tbm)
+* http://serveo.net/ (precisa de ssh, consegue usar no powershell)
+* https://localtunnel.github.io/www/ (modulo node, bem facil tbm)
 
 Após isso basta habilitar o webhook na aba fulfillment do console do dialogflow e depois habilitar o fulfillment na intent desejada.
 (Sim, você habilita o fulfillment para o agent e depois tem que habilitar em cada intent que voce deseja fazer webhook)

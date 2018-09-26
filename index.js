@@ -29,6 +29,9 @@ app.post('/webhook', (req, res) => {
         agent.add('Vixi deu ruim')
     }
 
+    // mapeia qual intent é tratada por qual funcao
+    // note que é o nome da intent que você cadastrou la no console do dialogflow
+    // além disso é case sensitive, cuidado!
     let intentMap = new Map();
     intentMap.set('Default Welcome Intent', welcome)
     intentMap.set('Default Fallback Intent', fallback)
